@@ -156,10 +156,17 @@
                 </section>
 
                 <section>
-                    <h2>AND...</h2>
+                    <h2>So&hellip;</h2>
                     <div class="fragment">
-                        <p>Now you know how this works</p>
                         <pre><code class="js">$( PARENT ).on( 'click', CHILD, fn );</code></pre>
+                        <img src="ow/img/science.gif">
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Note: Not all events bubble</h2>
+                    <div class="fragment">
+                        <p>load, unload, focus, blur&hellip;</p>
                     </div>
                 </section>
 
@@ -168,8 +175,66 @@
                 </section>
 
                 <section>
+                    <h2>What?</h2>
+                    <p class="fragment">Events initialized by the application</p>
+                    <p class="fragment">Can be anything you want</p>
+                </section>
+
+                <section>
+                    <h2>Why?</h2>
+                    <p class="fragment">Loosely coupled architecture</p>
+                    <p class="fragment">Smaller units of code</p>
+                    <p class="fragment">Easier to test</p>
+                </section>
+
+                <section>
+                    <h2>Set a listener</h2>
+                    <div class="fragment">
+                        <pre><code class="js">TARGET.addEventListener(
+    'heyOttawaJS',
+    function ( event ) {
+        console.log( event.detail.message );
+    }
+);</code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Create a custom event</h2>
+                    <div class="fragment">
+                        <pre><code class="js">var cEvt = new CustomEvent(
+    'heyOttawaJS',
+    {
+        detail: {
+            message: 'badass!'
+        },
+        bubbles: false,
+        cancelable: false
+    }
+);</code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Trigger a custom event</h2>
+                    <div class="fragment">
+                        <pre><code class="js">TARGET.dispatchEvent( cEvt );</code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>In action</h2>
+                    <iframe src="ow/custom-event.html" width="50%" height="300"></iframe>
+                </section>
+
+                <section>
+                    <h1>Pub/Sub pattern</h1>
+                    <p><small>AKA Observer</small></p>
+                </section>
+
+                <section>
                     <h2>Resources</h2>
-                    <!-- <p><a href="https://nodejs.org/">nodejs.org</a></p> -->
+                    <p><a href="http://en.wikipedia.org/wiki/DOM_Events">DOM Events</a></p>
                 </section>
 
                 <section>
