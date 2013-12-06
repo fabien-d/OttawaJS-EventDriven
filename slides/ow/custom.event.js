@@ -4,11 +4,6 @@ document.addEventListener( 'user/create', function ( event ) {
     resultEL.innerHTML = event.detail.username;
 } );
 
-// user.log.js
-document.addEventListener( 'user/create', function ( event ) {
-    console.log( 'log user/create event for ' + event.detail.username );
-} );
-
 // user.js
 var customEl = document.getElementById( 'custom' );
 customEl.addEventListener( 'click', function ( event ) {
