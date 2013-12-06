@@ -8,26 +8,36 @@
         <style>
             body {
                 color: #FFF;
-                font: 20px/1.5 Helvetica, Arial, sans-serif;
-                padding: 20px;
+                font: 24px/1.5 Helvetica, Arial, sans-serif;
+                padding: 24px;
+            }
+
+            #parent,
+            p,
+            span,
+            em {
+                padding: 12px;
+                margin: 0;
+            }
+
+            .children:first-child {
+                padding: 24px;
             }
 
             span,
             em {
-                padding: 0 10px;
+                display: inline-block;
             }
 
-            span:hover,
-            em:hover {
-                background: #0D99A5;
+            #parent:hover {
+                outline: thin dotted yellow;
             }
-
             #parent :hover {
                 outline: thin dotted #0D99A5;
             }
-
-            .children:first-child {
-                padding: 0 10px;
+            #parent span:hover,
+            #parent em:hover {
+                outline: thin dotted red;
             }
         </style>
     </head>
