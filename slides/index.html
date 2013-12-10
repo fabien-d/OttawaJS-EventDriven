@@ -43,6 +43,10 @@
                     <h1>Event driven architecture</h1>
                     <p>
                         <small><a href="http://fabien-d.github.io/">Fabien Doiron</a> / <a href="http://twitter.com/fabien_doiron">@fabien_doiron</a></small></p>
+
+                    <aside class="notes">
+                        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+                    </aside>
                 </section>
 
                 <section>
@@ -53,7 +57,9 @@
                         <p class="fragment">Pub/Sub Design Pattern</p>
                     </section>
 
-                    <aside class="notes"></aside>
+                    <aside class="notes">
+                        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+                    </aside>
                 </section>
 
                 <!-- Example of nested vertical slides -->
@@ -145,7 +151,7 @@
                 <section>
                     <h2>How exactly does it work?</h2>
                     <p class="fragment">Events are fired from the inner most element</p>
-                    <p class="fragment">Can be a child of the element with the event listener</p>
+                    <p class="fragment">E.g. Children of the element with the event listener</p>
                 </section>
 
                 <section>
@@ -239,12 +245,23 @@
                 </section>
 
                 <section>
+                    <h2>Air traffic control</h2>
                     <p><img src="ow/img/atc.png"></p>
-                    <p><small>Addy Osmani: <a href="http://addyosmani.com/scalablejs/">Scalable JS Design Patterns</a></small></p>
+                    <p><small><small>Metaphor from Addy Osmani: <a href="http://addyosmani.com/scalablejs/">Scalable JS Design Patterns</a></small></small></p>
                 </section>
 
                 <section>
-                    <h2>How do I start using this?</h2>
+                    <h2>Module notifies mediator</h2>
+                    <p><img src="ow/img/atc2.png"></p>
+                </section>
+
+                <section>
+                    <h2>Mediator notifies modules</h2>
+                    <p><img src="ow/img/atc3.png"></p>
+                </section>
+
+                <section>
+                    <h2>Taking it further</h2>
                     <p class="fragment">Tons of pub/sub libraries</p>
                     <div class="fragment">
                         <p>Yes, jQuery has an implementation, sort of<br>
@@ -277,10 +294,14 @@
                     <h2>Resources</h2>
                     <p><a href="http://en.wikipedia.org/wiki/DOM_Events">DOM Events</a></p>
                     <p><a href="https://developer.mozilla.org/en/docs/Web/API/CustomEvent">Custom Event MDN</a></p>
+                    <p><a href="http://addyosmani.com/scalablejs/">Scalable JS Design Patterns</a></p>
                 </section>
 
                 <section>
-                    <h1>END</h1>
+                    <img src="ow/img/rocky-small.png" style="border-radius: 500px;">
+                    <h1>Questions?</h1>
+                    <p>
+                        <small><a href="http://fabien-d.github.io/">Fabien Doiron</a> / <a href="http://twitter.com/fabien_doiron">@fabien_doiron</a></small></p>
                 </section>
 
             </div>
@@ -301,7 +322,7 @@
                 center: true,
 
                 theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+                transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
 
                 // Optional libraries used to extend on reveal.js
                 dependencies: [
