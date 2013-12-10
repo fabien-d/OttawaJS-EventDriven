@@ -43,10 +43,6 @@
                     <h1>Event driven architecture</h1>
                     <p>
                         <small><a href="http://fabien-d.github.io/">Fabien Doiron</a> / <a href="http://twitter.com/fabien_doiron">@fabien_doiron</a></small></p>
-
-                    <aside class="notes">
-                        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-                    </aside>
                 </section>
 
                 <section>
@@ -55,11 +51,8 @@
                         <p class="fragment">DOM Events</p>
                         <p class="fragment">Custom Events</p>
                         <p class="fragment">Pub/Sub Design Pattern</p>
+                        <p class="fragment"><small>(AKA Observer)</small></p>
                     </section>
-
-                    <aside class="notes">
-                        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-                    </aside>
                 </section>
 
                 <!-- Example of nested vertical slides -->
@@ -109,8 +102,8 @@
 
                 <section>
                     <h2>Usage</h2>
-                    <pre class="fragment"><code class="js"> target.addEventListener( 'click', fn, false );
- target.removeEventListener( 'click', fn, false ); </code></pre>
+                    <pre class="fragment"><code class="js"> TARGET.addEventListener( 'click', fn, false );
+ TARGET.removeEventListener( 'click', fn, false ); </code></pre>
                     <p>&nbsp;</p>
                     <p class="fragment">Third parameter <code>'useCapture'</code> is now optional</p>
                     <p class="fragment">including it is safer</p>
@@ -242,6 +235,13 @@
                     <h2>Intent</h2>
                     <p class="fragment">Define one-to-many dependency between objects</p>
                     <p class="fragment">One object changes, notify and update all dependencies</p>
+                </section>
+
+                <section>
+                    <h2>Adding a mediator to your app</h2>
+                    <p class="fragment">Central location to handle communication</p>
+                    <p class="fragment">Modules don't need to know anything about other modules</p>
+                    <p class="fragment">Modules can focus on the single responsibility principle</p>
                 </section>
 
                 <section>
