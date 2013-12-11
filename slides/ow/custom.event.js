@@ -4,16 +4,6 @@ document.addEventListener( 'user/create', function ( event ) {
     resultEL.innerHTML = event.detail.username;
 } );
 
-// another.js
-document.addEventListener( 'user/create', function ( event ) {
-    console.log( 'Custom events fired for: ' + event.detail.username );
-} );
-
-// even.more.js
-document.addEventListener( 'user/create', function ( event ) {
-    alert( 'Hey OttawaJS, ' + event.detail.username + ' says hi!' );
-} );
-
 // user.js
 // ul#flintstones
 var el = document.getElementById( 'flintstones' );
