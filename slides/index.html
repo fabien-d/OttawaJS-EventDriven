@@ -50,8 +50,10 @@
                         <h2>What's Inside?</h2>
                         <p class="fragment">DOM Events</p>
                         <p class="fragment">Custom Events</p>
-                        <p class="fragment">Pub/Sub Design Pattern</p>
-                        <p class="fragment"><small>(AKA Observer)</small></p>
+                        <div class="fragment">
+                            <p>Pub/Sub Design Pattern</p>
+                            <p><small>(AKA Observer)</small></p>
+                        </div>
                     </section>
                 </section>
 
@@ -83,10 +85,8 @@
                     <p>click, dblclick, mousedown, mouseup, mouseover&hellip;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <div class="fragment">
-                        <h2>Keyboard Events</h2>
-                        <p>keydown, keypress, keyup</p>
-                    </div>
+                    <h2>Keyboard Events</h2>
+                    <p>keydown, keypress, keyup</p>
                 </section>
 
                 <section>
@@ -94,10 +94,8 @@
                     <p>select, change, submit, reset, focus, blur&hellip;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <div class="fragment">
-                        <h2>Other Events</h2>
-                        <p>load, unload, error, resize, scroll&hellip;</p>
-                    </div>
+                    <h2>Other Events</h2>
+                    <p>load, unload, error, resize, scroll&hellip;</p>
                 </section>
 
                 <section>
@@ -114,7 +112,7 @@
                     <p class="fragment">2 phases of event propagation</p>
                 </section>
 
-                <section>
+                <!-- <section>
                     <h2>Capturing Phase</h2>
                     <p class="fragment">Starts at the outer most element</p>
                     <p class="fragment">Ends at the inner most element</p>
@@ -126,13 +124,29 @@
                     <p class="fragment">Starts at the inner most element</p>
                     <p class="fragment">Ends at the outer most element</p>
                     <p class="fragment">Extremely useful</p>
-                </section>
+                </section> -->
 
                 <section>
                     <div style="padding: 12px; background: #FFF">
                         <img src="ow/img/eventflow.png">
                     </div>
                     <p><small><br>from W3C</small></p>
+                </section>
+
+                <section>
+                    <h2>Capturing Phase</h2>
+                    <p>Starts at the outer most element</p>
+                    <p>Ends at the inner most element</p>
+                    <p>Can generally be ignored</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+
+                    <div class="fragment">
+                        <h2>Bubbling Phase</h2>
+                        <p>Starts at the inner most element</p>
+                        <p>Ends at the outer most element</p>
+                        <p>Extremely useful</p>
+                    </div>
                 </section>
 
                 <section>
