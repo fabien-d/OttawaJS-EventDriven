@@ -103,28 +103,16 @@
                     <pre class="fragment"><code class="js"> TARGET.addEventListener( 'click', fn, false );
  TARGET.removeEventListener( 'click', fn, false ); </code></pre>
                     <p>&nbsp;</p>
-                    <p class="fragment">Third parameter <code>'useCapture'</code> is now optional</p>
-                    <p class="fragment">including it is safer</p>
+                    <div class="fragment">
+                        <p>Third parameter <code>'useCapture'</code> is now optional</p>
+                        <p>including it is safer</p>
+                    </div>
                 </section>
 
                 <section>
                     <h2>Capturing &amp; Bubbling</h2>
                     <p class="fragment">2 phases of event propagation</p>
                 </section>
-
-                <!-- <section>
-                    <h2>Capturing Phase</h2>
-                    <p class="fragment">Starts at the outer most element</p>
-                    <p class="fragment">Ends at the inner most element</p>
-                    <p class="fragment">Can generally be ignored</p>
-                </section>
-
-                <section>
-                    <h2>Bubbling Phase</h2>
-                    <p class="fragment">Starts at the inner most element</p>
-                    <p class="fragment">Ends at the outer most element</p>
-                    <p class="fragment">Extremely useful</p>
-                </section> -->
 
                 <section>
                     <div style="padding: 12px; background: #FFF">
@@ -150,7 +138,7 @@
                 </section>
 
                 <section>
-                    <h2>Why is this useful?</h2>
+                    <h2>Why is this event bubbling useful?</h2>
                     <iframe src="ow/multiple-event.html" height="450"></iframe>
                     <iframe src="ow/single-event.html" height="450"></iframe>
                 </section>
@@ -283,6 +271,17 @@
                         </p>
                     </div>
                     <p class="fragment">Not too complex to write</p>
+                </section>
+
+                <section>
+                    <h2>Basic example</h2>
+                    <p><pre><code class="js"> mediator.subscribe(
+     'heyOttawaJS',
+     function ( data ) {
+         console.log( data ); 
+     }
+ ); </code></pre></p>
+                    <p><pre><code class="js"> mediator.publish( 'heyOttawaJS', { k: 'v' } ); </code></pre></p>
                 </section>
 
                 <section>
