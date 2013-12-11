@@ -110,8 +110,8 @@
                 </section>
 
                 <section>
-                    <h2>Capturing &amp; Bubbling</h2>
-                    <p class="fragment">2 phases of event propagation</p>
+                    <h2>Capture, target &amp; Bubbling</h2>
+                    <p class="fragment">3 phases of event propagation</p>
                 </section>
 
                 <section>
@@ -122,17 +122,19 @@
                 </section>
 
                 <section>
-                    <h2>Capturing Phase</h2>
-                    <p>Starts at the outer most element</p>
-                    <p>Ends at the inner most element</p>
+                    <h2>Capture Phase</h2>
+                    <p>Starts at the outer most and ends at the inner most element</p>
                     <p>Can generally be ignored</p>
                     <p>&nbsp;</p>
+                    <div class="fragment">
+                        <h2>Target Phase</h2>
+                        <p>Event is dispatched to the target element</p>
+                    </div>
                     <p>&nbsp;</p>
 
                     <div class="fragment">
                         <h2>Bubbling Phase</h2>
-                        <p>Starts at the inner most element</p>
-                        <p>Ends at the outer most element</p>
+                        <p>Starts at the inner most and ends at the outer most element</p>
                         <p>Extremely useful</p>
                     </div>
                 </section>
