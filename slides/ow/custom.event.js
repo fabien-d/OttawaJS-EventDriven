@@ -4,6 +4,12 @@ document.addEventListener( 'user/create', function ( event ) {
     resultEL.innerHTML = event.detail.username;
 } );
 
+
+//another.js
+document.addEventListener( 'user/create', function (event ) {
+    alert( 'Hey OttawaJS, ' + event.detail.username + ' says hi!');
+})
+
 // user.js
 // ul#flintstones
 var el = document.getElementById( 'flintstones' );
